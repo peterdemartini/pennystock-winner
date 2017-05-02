@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "async": "^2.4.0",
+    "coffee-script": "^1.12.5",
+    "envalid": "^3.0.0",
+    "lodash": "^4.17.4",
+    "money-js": "^1.0.2",
+    "request": "^2.81.0"
+  }
+}
