@@ -17,9 +17,9 @@ class Command
         async.reduce _.get(profile, 'stocks', []), 0, @_getCurrentPrice, (error, totalNet) =>
           return @die error if error?
           console.log "TOTAL QUANTITY BOUGHT: #{totalQuantity}"
-          console.log "TOTAL NET VALUE: #{_.round(totalNet, 2)}"
-          console.log "TOTAL BOUGHT: #{_.round(totalSpent, 2)}"
-          console.log "RICHES: #{_.round(_.get(profile, 'riches'), 2)}"
+          console.log "TOTAL NET VALUE: $#{_.round(totalNet, 2)}"
+          console.log "TOTAL BOUGHT: $#{_.round(totalSpent, 2)}"
+          console.log "RICHES: $#{_.round(_.get(profile, 'riches'), 2)}"
           @die()
 
   _getProfile: (callback) =>
